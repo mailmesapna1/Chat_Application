@@ -61,7 +61,7 @@ const DashboardLayout = () => {
   console.log(theme);
 
   return (
-    <>
+    
     <Stack direction="row">
       <Box
         p={2}
@@ -158,7 +158,6 @@ const DashboardLayout = () => {
       <Outlet />
     </Stack>
       
-    </>
   );
 };
 
