@@ -52,7 +52,10 @@ const ChatElement = ({ id, name, img, msg, time, unread, online }) => {
       sx={{
         width: "100%",
         borderRadius: 1,
-        backgroundColor: theme.palette.mode==="light"? "#fff": theme.palette.background.default,
+        backgroundColor:
+          theme.palette.mode === "light"
+            ? "#fff"
+            : theme.palette.background.default,
       }}
       p={2}
     >
@@ -125,13 +128,15 @@ const Chats = () => {
     <Box
       sx={{
         position: "relative",
-
         width: 320,
-        backgroundColor: theme.palette.mode === "light"? "#F8FAFF" : theme.palette.background.paper,
+        backgroundColor:
+          theme.palette.mode === "light"
+            ? "#F8FAFF"
+            : theme.palette.background.paper,
         boxShadow: "0px 0px 2px rgba(0,0,0,0.25",
       }}
     >
-      <Stack p={3} spacing={2} sx={{ height: "100vh" }}>
+      <Stack p={2} spacing={2} sx={{ height: "100vh" }}>
         <Stack
           direction="row"
           alignItems={"center"}
@@ -145,12 +150,11 @@ const Chats = () => {
         <Stack sx={{ width: "100%" }}>
           <Search>
             <Stack direction="row" alignItems="center" spacing={5}>
-              <SearchIconWrapper >
-              <MagnifyingGlass color="#709CE6" />
-            </SearchIconWrapper>
-            <StyledInputBase placeholder="Search..." />
+              <SearchIconWrapper>
+                <MagnifyingGlass color="#709CE6" />
+              </SearchIconWrapper>
+              <StyledInputBase placeholder="Search..." />
             </Stack>
-            
           </Search>
         </Stack>
         <Stack spacing={1}>
@@ -163,7 +167,7 @@ const Chats = () => {
         <Stack
           spacing={2}
           direction="column"
-          sx={{ flexGrow: 1, overflow: "scroll", height: "100%" }}
+          sx={{ flexGrow: 1, overflowY: "scroll", height: "100%" }}
         >
           <SimpleBarStyle timeout={500} clickOnTrack={false}>
             <Stack spacing={2.4}>
