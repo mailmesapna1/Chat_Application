@@ -2,6 +2,7 @@ import React from "react";
 import { Box, IconButton, Stack, Typography } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 import { DownloadSimple, Image } from "phosphor-react";
+import MessageOption from "./MessageOption";
 
 const DocMsg = ({ el }) => {
   const theme = useTheme();
@@ -37,6 +38,7 @@ const DocMsg = ({ el }) => {
           <Typography variant="body2" sx={{color: el.incoming? theme.palette.text : "#fff"}}>{el.message}</Typography>
         </Stack>
       </Box>
+      <MessageOption />
     </Stack>
   );
 };

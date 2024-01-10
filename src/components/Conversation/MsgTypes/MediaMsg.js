@@ -1,6 +1,7 @@
 import React from "react";
 import { useTheme } from "@mui/material/styles";
 import { Box, Stack, Typography } from "@mui/material";
+import MessageOption from "./MessageOption";
 
 const MediaMsg = ({ el }) => {
   const theme = useTheme();
@@ -23,6 +24,7 @@ const MediaMsg = ({ el }) => {
             </Typography>
         </Stack>
       </Box>
+      <MessageOption />
     </Stack>
   );
 };
