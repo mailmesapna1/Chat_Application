@@ -3,7 +3,7 @@ import { Box, Stack, Typography } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 import MessageOption from "./MessageOption";
 
-const TextMsg = ({ el }) => {
+const TextMsg = ({ el,menu }) => {
   const theme = useTheme();
   return (
     <Stack direction="row" justifyContent={el.incoming ? "start" : "end"}>
@@ -25,7 +25,10 @@ const TextMsg = ({ el }) => {
         </Typography>
       </Box>
       {/*Message Option  */}
-      <MessageOption />
+      {
+        menu && <MessageOption />
+      }
+      
 
     </Stack>
   );
