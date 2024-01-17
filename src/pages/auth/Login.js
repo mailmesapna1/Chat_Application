@@ -11,7 +11,7 @@ const Login = () => {
         <Typography variant="h4">Login To Tawk</Typography>
         <Stack direction={"row"} spacing={0.5}>
           <Typography variant="body2"> New User?</Typography>
-          <Link to="/auth/rigister" component={RouterLink} variant="subtitle2">
+          <Link to="/auth/register" component={RouterLink} variant="subtitle2">
             Create an account
           </Link>
         </Stack>
