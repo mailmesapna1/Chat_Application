@@ -91,7 +91,7 @@ const CreateGroup = ({ open, handleClose }) => {
       keepMounted
       onClose={handleClose}
       aria-describedby="alert-dialog-slide-description"
-      sx={{}}
+      sx={{p: 4}}
     >
       {/* Title */}
       <DialogTitle >Create New Group</DialogTitle>
